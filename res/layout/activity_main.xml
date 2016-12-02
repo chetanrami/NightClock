@@ -1,0 +1,50 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableclock"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:stretchColumns="*" >
+
+    <TableRow  
+        android:layout_height="0dp"
+    	android:layout_weight="1" >
+
+        <TextClock
+            android:id="@+id/textclock"
+            style="@style/Colorred"
+            android:format12Hour="H:mm "
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextClock
+            android:id="@+id/textclock2"
+            style="@style/Colorred"
+            android:format12Hour="EEEE - MMM dd"
+            android:textSize="25sp"
+            android:textStyle="italic|bold" />
+    </TableRow>
+
+    <Button
+            android:id="@+id/settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings" />
+    
+    <TableRow 
+		android:layout_height="0dp"
+    	android:layout_weight="1" >
+
+        <TextView
+            android:id="@+id/row2col1"
+            style="@style/Colorred"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/row2col2"
+            style="@style/Colorred"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+    </TableRow>
+
+</TableLayout>
